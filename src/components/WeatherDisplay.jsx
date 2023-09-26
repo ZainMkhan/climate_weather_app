@@ -10,7 +10,6 @@ import DisplayTopbar from "./DisplayTopBar";
 
 function WeatherDisplay({selectedCity , scale, setScale, weatherData, setWeatherData}){
 
-    console.log(weatherData)
 
 let weatherInfo = {
     cityName : "",

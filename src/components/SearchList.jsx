@@ -5,7 +5,6 @@ import {SelectedCity} from "../App";
 
 function SearchList({ cityNames , setInputRef }) {
 
-
 const [selectedCity, setSelectedCity] = useContext(SelectedCity);
 
 function handleClick(city) {
@@ -13,16 +12,16 @@ function handleClick(city) {
   setSelectedCity({
     name: city.name,
     lat: city.lat,
-    lng: city.lng,
+    lng: city.lon,
   });
   setInputRef("");
 }
 
   return (
     <ul className="searchListCon">
-      {cityNames.map((city) => (
+      {cityNames.map((city, i) => (
         <li onClick={() => handleClick(city)}
-        key={city.geonameId}>{city.name}</li>
+        key={i}>{city.name} , {city.country}</li>
       ))}
     </ul>
   );
