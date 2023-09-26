@@ -26,9 +26,54 @@
       display: none;
     }
 
+    .currentLocation{ 
+      width: 50px;
+      height: 45px;
+      border-radius: 50%;
+      margin-right: 10%;
+    }
+  }
+/* 
+  @media screen and (min-width: 375px){
     .currentLocation{
-      width: 10%;
+      width: 15%;
       height: 80%;
       border-radius: 50%;
     }
   }
+
+  @media screen and (min-width: 360px){
+    .currentLocation{
+      width: 15%;
+      height: 80%;
+      border-radius: 50%;
+    }
+  }
+
+  @media screen and (min-width: 768px){
+    .currentLocation{
+      width: 8%;
+      height: 80%;
+      border-radius: 50%;
+      margin-right: 10%
+    }
+  }
+
+  @media screen and (min-width: 1024px){
+    .currentLocation{
+      width: 7%;
+      height: 80%;
+      border-radius: 50%;
+      margin-right: 10%
+    }
+  }
+
+
+  @media screen and (min-width:   1024px){
+    .currentLocation{
+      width: 40%;
+      height: 80%;
+      border-radius: 1em;
+      margin-right: 10%
+    }
+  } */
