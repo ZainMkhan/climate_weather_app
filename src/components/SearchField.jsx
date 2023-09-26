@@ -6,7 +6,7 @@ import SearchBar from "./SearchBar";
 function SearchField({setCityNames,inputRef, setInputRef}){
 
     let apiKey = "7e1bed96ede9a1be6d8f0812a6932812";
-    let apiSearch = `http://api.openweathermap.org/geo/1.0/direct?q=${inputRef}&limit=5&appid=${apiKey}`
+    let apiSearch = `https://api.openweathermap.org/geo/1.0/direct?q=${inputRef}&limit=5&appid=${apiKey}`
 
 
 
