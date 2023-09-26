@@ -112,3 +112,10 @@
 
 
   }
+
+
+  @media screen and (max-width: 373px){
+    .s-tile-heading{
+        font-size: 0.8em;
+    }
+}
