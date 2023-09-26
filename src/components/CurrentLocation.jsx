@@ -60,6 +60,7 @@ const [ selectedCity , setSelectedCity] = useContext(SelectedCity);
         .then((response) => response.json())
         .then((data) => {
             setSelectedCity({
+              loaded: true,
               name: data.cityName,
               lat : location.coordinates.lat,
               lng : location.coordinates.lng
