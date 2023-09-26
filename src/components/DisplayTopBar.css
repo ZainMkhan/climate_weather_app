@@ -1,0 +1,101 @@
+.topBtn{
+    width: 90%;
+    min-height: 10%;
+    max-height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cToFCon{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.c-To-F{
+    position: relative;
+    background-color: white;
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.4);
+    width: 40%;
+    height: 90%;
+    display: block;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+
+.c-To-F:after{
+    content: "°C";
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background: linear-gradient(180deg, #ffcc89, #d8860b);
+    border-radius: 2em;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    width: 40%;
+    height: 80%;
+    top: 10%;
+    left: 5%;
+    transition: 0.3s;
+ 
+}
+
+.c-To-F:active:after{
+    width: 50%;
+}
+
+.c-To-F.active::after {
+    content: "°F";
+}
+
+input[type="checkbox"]{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+input[type="checkbox"]:checked + label{
+    background-color: rgb(223, 238, 10);
+    box-shadow: 0px 5px 10px rgba(223, 220, 220, 0.2);
+}
+
+input[type="checkbox"]:checked + label:after{
+    left: 15%;
+    transform: translateX(100%);
+    background: white;
+}
+.icon-con{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: inherit;
+    margin-left: 10%;
+    margin-top: 2%;
+
+}
+.celsuisIcon{
+   width: 20px;
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 1251px) {
+    .topBtn{
+        margin-top: 3%;
+    }
+    .c-To-F{
+        padding: 5%;
+        width: 60%;
+    }
+    
+  }

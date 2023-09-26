@@ -1,0 +1,15 @@
+*:focus{
+    outline: none;
+}
+
+.searchBar{
+    width: 80%;
+    height: 90%;
+    border-radius: 1.5em;
+    border: none;
+    padding-left: 5%;
+    font-size: 1.4em;
+}
+
+
+

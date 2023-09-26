@@ -1,0 +1,102 @@
+.visibility-con{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #1f1e1e;
+    width: 18%;
+    height: 40%;
+    border-radius: 1em;
+    color: white;
+    font-size: 0.7em;
+}
+
+.v-title{
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    width: 100%;
+    height: 30%;
+}
+
+.v-title-heading{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.v-icon{
+    width: 20%;
+    height: 40%;
+    color: grey;
+}
+
+
+
+.v-details-con{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    
+}
+
+.v-detail-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #313030;
+    width: 80%;
+    height: 40%;  
+    border-radius: 0.5em;
+    font-size: 2em;
+}
+
+.v-heading{
+    color: grey;
+    transition: 0.3s;
+}
+
+.v-heading:hover{
+    color: yellow;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1251px) {
+    .visibility-con{
+        display: flex;
+        order: 2;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2em;
+        border-radius: 1em;
+        margin-top: 20px;
+    }
+
+    .v-title{
+        margin-top: 5%;
+        height: 10%;
+        font-size: 0.5em;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .v-details-con{
+        font-size: 0.7em;
+        justify-content: center;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .v-detail-item{
+        margin-top: 10px;
+        font-size: 1.5em;
+        padding: 3%
+    }
+
+  }

@@ -1,0 +1,15 @@
+.searchIconCon{
+    background-color: black;
+    height: 90%;
+    width: 20%;
+    border-radius: 1.5em;
+    margin-right: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchIcon{
+    color: white;
+    font-size: 1.2em;
+}

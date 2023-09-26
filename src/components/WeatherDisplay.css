@@ -1,0 +1,36 @@
+
+.weatherDisplay{
+    width: 35%;
+    height: inherit;
+    background-color: rgba(56, 55, 55, 0.705);
+    margin : 2%;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+
+
+.heading-now{
+margin-left : 5%;
+font-size: 1.2em;
+color: gold;
+}
+
+.display{
+    width: 80%;
+    height: 80%;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1251px) {
+    .weatherDisplay{
+        width: 80%;
+        height: max-content;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+  }
+

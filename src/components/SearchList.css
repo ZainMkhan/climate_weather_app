@@ -1,0 +1,36 @@
+.searchListCon{
+    position: absolute;
+    top: 10%;
+    width: 20%;
+    max-height: 400px;
+    overflow-y: auto;
+    border-radius: 0.3em;
+}
+
+li{
+    color: white;
+    width: 100%;
+    background-color: rgb(34, 33, 33);
+    padding: 2% 0 3% 4%;
+    font-size: 1.5em;
+    transition: background-color 250ms ease-in-out;
+}
+
+li:hover{
+    background-color: rgb(51, 51, 53);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1251px) {
+    .searchListCon{
+        width: inherit;
+        top: 11%;
+        z-index: 1;
+    }
+
+    li{
+        z-index: 3;
+        font-size: 1.2em;
+    }
+
+  }
