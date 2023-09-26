@@ -10,6 +10,7 @@ const [selectedCity, setSelectedCity] = useContext(SelectedCity);
 function handleClick(city) {
   
   setSelectedCity({
+    loaded : true,
     name: city.name,
     lat: city.lat,
     lng: city.lon,

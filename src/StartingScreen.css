@@ -1,0 +1,14 @@
+
+.screen-cover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.screen-heading{
+    text-align: center;
+    width: 40%;
+    height: 20%;
+    color: white;
+}

@@ -2,11 +2,13 @@ import NavBar from './components/Navbar';
 import "./App.css"
 import WeatherDisplayCon from './components/WeatherDisplayCon';
 import { createContext, useState } from 'react';
+import StartingScreen from "./StartingScreen";
 
 export const SelectedCity = createContext();
 
 function App() {
 let [selectedCity, setSelectedCity] = useState({
+  loaded: false,
   name: "",
   lat: "",
   lng: "",
@@ -16,7 +18,7 @@ let [selectedCity, setSelectedCity] = useState({
     <>
     <SelectedCity.Provider value={[selectedCity, setSelectedCity]}>
     <NavBar />
-    <WeatherDisplayCon selectedCity={selectedCity}/>
+    {selectedCity.loaded ? <WeatherDisplayCon selectedCity={selectedCity}/> : <StartingScreen/>}
     </SelectedCity.Provider>
     </>
   )
