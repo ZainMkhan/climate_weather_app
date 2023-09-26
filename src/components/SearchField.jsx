@@ -13,7 +13,7 @@ function SearchField({setCityNames,inputRef, setInputRef}){
             setCityNames([]);
             return;
           }
-        fetch(`http://api.geonames.org/searchJSON?q=${inputRef}&maxRows=6&username=zainm`)
+        fetch(`https://api.geonames.org/searchJSON?q=${inputRef}&maxRows=6&username=zainm`)
         .then(response => response.json())
         .then(json => setCityNames(json.geonames) )
     }, [inputRef])
